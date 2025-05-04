@@ -1,0 +1,376 @@
+/*Realice algunas configuraciones iniciales como agregar*/
+body {
+    background-image: url('https://i.pinimg.com/originals/4d/74/08/4d740888825ff6e44028919c3f2ebfc0.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: antiquewhite;
+    font-family:'Poppins', Cambria;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 150px;
+}
+
+nav a {
+    font-size: large;
+    font-weight: bolder;
+}
+
+nav a:active {
+    color: antiquewhite;
+    text-decoration: none;
+}
+nav a:visited {
+    color: antiquewhite;
+    text-decoration: none;
+}
+nav a:link {
+    color: antiquewhite;
+    text-decoration: none;
+}
+nav a:hover {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-mi-contenido img {
+    width: 150px;
+    height: 170px;
+    max-width: 150px;
+}
+
+.sobre-mi-contenido p {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.tarjetas-contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-proyecto1 {
+    display: flex;
+    flex-direction: column;
+    background-color:darkcyan;
+    width: auto;
+    max-width: 350px;
+    height: auto;
+    border-radius: 2%;
+}
+
+.tarjeta-proyecto1 h3 {
+    text-align: center;
+}
+
+.tarjeta-proyecto1 div {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   text-align: justify;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.tarjeta-proyecto1 img {
+    width: 170px;
+    max-width: 100%;
+    height: 150px;
+    max-height: 100%;
+    
+}
+
+.tarjeta-proyecto2 {
+    display: flex;
+    flex-direction: column;
+    background-color:darkcyan;
+    width: auto;
+    max-width: 550px;
+    height: auto;
+    max-height: 700px;
+    border-radius: 2%;
+}
+
+.tarjeta-proyecto2 h3 {
+    text-align: center;
+}
+
+.tarjeta-proyecto2 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tarjeta-proyecto2 img {
+    width: 170px;
+    max-width: 100%;
+    height: 150px;
+    max-height: 100%;
+}
+
+.contenedor-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.habilidades-contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 900px;
+    height: auto;
+    max-height: 900PX;
+    gap: 1rem;
+    
+}
+
+.contenedor-habilidades img {
+    width: 125px;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(224, 222, 222);
+    border-radius: 2%;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.contenedor-contacto h2 {
+    text-align: center;
+}
+
+.contenedor-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.contenedor-contacto div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-contacto label {
+    width: 200px;
+    max-width: 200px;
+}
+
+.contacto-button {
+    display: flex;
+    width: 75px;
+    max-width: 75px;
+}
+
+.contenedor-peliculas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.peliculas-contenido h2 {
+    text-align: center;
+}
+
+.peliculas-contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenedor-peliculas img {
+    width: 200px;
+    height: 300px;
+}
+
+.contenedor-peliculas h3 {
+    text-align: center;
+}
+
+.contenedor-peliculas p {
+    text-align: justify;
+    width: 300px;
+}
+
+.pelicula1 {
+    display: flex;
+    flex-direction: column;
+    background-color: darkmagenta;
+    border-radius: 2%;
+    width: 350px;
+    max-width: 350px;
+    height: 550px;
+    max-height: 550px;
+}
+
+.pelicula1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.pelicula2 {
+    display: flex;
+    flex-direction: column;
+    background-color: darkmagenta;
+    border-radius: 2%;
+    width: 350px;
+    max-width: 350px;
+    height: 550px;
+    max-height: 550px;
+}
+
+.pelicula2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pelicula3 {
+    display: flex;
+    flex-direction: column;
+    background-color: darkmagenta;
+    border-radius: 2%;
+    width: 350px;
+    max-width: 350px;
+    height: 550px;
+    max-height: 550px;
+}
+
+.pelicula3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-redes-sociales div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    gap: 1rem;
+}
+
+#logo-red-1 img {
+    width: 150px;
+    max-width: 150px;
+    height: 50px;
+}
+
+#logo-red-2 img {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+}
+
+ /*Transicion que afecta al desplazamiento de forma mas lenta al utilizar los vinculos del NAV*/
+html {
+    scroll-behavior: smooth;
+}
+
+.tarjeta-proyecto1:hover,
+.tarjeta-proyecto2:hover,
+.pelicula1:hover,
+.pelicula2:hover,
+.pelicula3:hover {
+    transform:  scale(1.05);
+    transition: transform 0.3s ease;
+}

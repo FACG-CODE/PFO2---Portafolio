@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Mi Portafolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    </head>
+
+    <body>
+        <!--El bloque HEADER nos permite colocar un titulo principal con un H1. Como mejora propondria insertar 
+        el H1 dentro de algun elemeno a fin de  mejorar visualmente a futuro.-->
+        <header>
+            <h1>Mi Portafolio</h1>
+        </header>
+        <!--Este bloque NAV nos permite crear un indice de navegacion al resto de nuestra pagina. En este caso seria ideal
+        estudiar las diferentes formar de realizar un indice o menu, especialmente cuando el dispositivo donde se abre la
+        pagina tiene una pantalla pequeña.-->
+        <nav>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#tarjetas">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <!--En el MAIN colocamos toda la información principal, en este caso esta estructurado en 
+        secciones mas pequeñas, donde cada una corresponde al vinculo del indice creado en el NAV. Realizar 
+        un escaneo de la información mas revelante para con el tema del sitio web, de esta forma 
+        filtrariamos mejor la información que se muestra.-->
+        <main> 
+            <section id="sobre-mi">
+                <div class="contenedor-sobre-mi">
+                    <h2>Sobre Mí</h2>
+                    <div class="sobre-mi-contenido">
+                        <img src="img/avatar.png" alt="Imagen con avatar personal">
+                        <p>
+                            Soy un joven de 26 años, vivo en CABA y actualmente estoy estudiando la Tecnicatura Superior en 
+                            Desarrollo de Software en el Instituto de Formación Técnica Superior Nro. 29. Soy un apasionado 
+                            de la programación, pero me inclino mas hacia el BACK-END. Mi aspiración personal es obtener mi titulo como
+                            desarrollador de software, aprender nuevas tecnologias para luego desarollarme profesionalmente en 
+                            alguna empresa que me de la oportunidad.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="tarjetas">
+                <div class="contenedor-tarjetas">
+                    <h2>Proyectos</h2>
+                    <div class="tarjetas-contenido">
+                        <div class="tarjeta-proyecto1">
+                            <h3>Sistema de Gestion de Consultorios</h3>
+                            <div>
+                                <img src="img/seprice.png" alt="Logo Sistema Informatico de la Clinica SePrice">
+                                <p>
+                                    Se trata de un sistema informático para escritorio, con base de datos local, el mismo cuenta 
+                                    con distintas funcionalidades como el registro de empleados administrativos, personal médico y 
+                                    pacientes, la gestión de turnos, el registro del proceso de atención médica, y la liquidación 
+                                    de honorarios para el personal médico contratado. 
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="tarjeta-proyecto2">
+                            <h3>Sistema de Gestion de Consorcios</h3>
+                            <div>
+                                <img src="img/consorcio.png" alt="Logo Sistema Informatico para la Gestion de Consorcios">
+                                <p>
+                                    Sistema informático destinado inicialmente para escritorio, se trata de un software con funcionalidades
+                                    que automatizan las tareas de un Administrador de Consorcios. El mismo cumple con la actual legislación 
+                                    que regula la actividad en CABA. Sus funciones principales son, registro de personas con diferenciación 
+                                    de roles, registro de gastos del consorcio, la generación de balances de expensas y recibos de 
+                                    pago, el registro de pagos de propietarios y la visualización del estado contable para su analisis. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habilidades">
+                <div class="contenedor-habilidades">
+                    <h2>Habilidades</h2>
+                    <div class="habilidades-contenido">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Logo del lenguaje de programacion CSharp">
+                        <img src="https://1000marcas.net/wp-content/uploads/2020/11/Java-logo.png" alt="Logo del lenguaje de programacion Java">
+                        <img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" alt="Logo del lenguaje de programacion Klotin">
+                        <img src="https://ih1.redbubble.net/image.5536116430.2042/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Logo sistema gestor de base de datos MySql">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="Logo sistema gestor de base de datos SQLite">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Extensible_Markup_Language_%28XML%29_logo.svg/123px-Extensible_Markup_Language_%28XML%29_logo.svg.png" alt="Logo lenguaje de programacion XML">
+                        <img src="https://user-images.githubusercontent.com/87325345/199505243-848a53d1-b9dc-40e0-9dd9-a369b0d4ad59.jpg" alt="Logos de Git + GitHub">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejkwEg71-W6nYdN0BZYWrfqMN25GeQ5QIrQ&s" alt="Logo Visual Studio">
+                        <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="Logo Visual Studio Code">
+                        <img src="https://www.liblogo.com/img-logo/max/ne6903n085-netbeans-logo-netbeans-logo-png-transparent-amp-svg-vector-freebie-supply.png" alt="Logo NetBeans">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/1200px-Android_Studio_icon_%282023%29.svg.png" alt="Logo Android Studio">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx28mg8aQ39CEGURVztotd5VC0bO7Ik-ZpBw&s" alt="Logo plataforma Figma">
+                    </div>
+                </div>
+            </section>
+
+            <!--Esta seccion sirve como formulario de contacto para un visitante de la pagina interesado en nuestra persona.
+            Como propuesta, seria ideal a futuro conectarla con BACK END para que tenga una funcionalidad util.-->
+            <section id="contacto">
+                <div class="contenedor-contacto">
+                    <h2>Formulario de Contacto</h2>
+                    <form>
+                        <div>
+                            <label for="nombre"><strong>Nombre: </strong></label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div>
+                            <label for="apellido"><strong>Apellido: </strong></label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                        <div>
+                            <label for="email"><strong>Email: </strong></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="contacto-button">
+                            <button type="submit"><strong>SUBMIT</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="peliculas">
+                <div class="contenedor-peliculas">
+                    <h2>Peliculas Favoritas</h2>
+                    <div class="peliculas-contenido">
+                        <div class="pelicula1">
+                            <h3>Rescatando al Soldado Ryan</h3>
+                            <div>
+                                <img src="https://image.tmdb.org/t/p/original/yfExW9uPK4idbUDjRGBlXLbMxRR.jpg" alt="Portada de la pelicula Rescatando al Soldado Ryan">
+                                <p>Ambientada en la Segunda Guerra Mundial. Los efectos utilizados, el desarrollo de la trama y la 
+                                    actuación del reparto fue un combo unico, dandonos a conocer lo terrible que fue esa guerra.</p>
+                            </div>
+                        </div>
+                        <div class="pelicula2">
+                            <h3>Gladiador</h3>
+                            <div>
+                                <img src="https://th.bing.com/th/id/R.a9c70eb18d4eafe5aaca089d8370f3e4?rik=X0hGx6bQM7m4CQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-9L8tANsUfKQ%2fUb5IKKxHyII%2fAAAAAAAAAqk%2f0_TWkXqe_-U%2fs1600%2fGladiador.jpg&ehk=CtqDAgBzbg5mtfojbTLfxd4n%2bS9x2W9imvBU5ubLDhc%3d&risl=&pid=ImgRaw&r=0" alt="Portada de la pelicula Gladiador">
+                                <p>Otra pelicula excelente, con ambientación en la Roma antigua, nos desvela con una trama unica y 
+                                    batallas sangrientas con tomas de accion inolvidables.</p>
+                            </div>
+                        </div>
+                        <div class="pelicula3">
+                            <h3>El Padrino</h3>
+                            <div>
+                                <img src="https://es.web.img3.acsta.net/pictures/18/06/12/12/12/0117051.jpg?coixp=49&coiyp=27" alt="Portada de la pelicula El Padrino">
+                                <p>Una total obra maestra, simplemente bella por donde se mire. Su trama puede utilizarce para 
+                                    metaforas y muchas de sus frases nos dejan en claro el porque de los negocios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contenedor-redes-sociales">
+                <h2>Mis Redes</h2>
+                <div class="redes-sociales">
+                    <a id="logo-red-1" href="https://www.linkedin.com/in/francisco-agustin-cruz-guantay-bb49b42b8/"><img src="img/linkedin.png" alt="Logo Linkedin"></a>
+                    <a id="logo-red-2" href="https://www.instagram.com/agustinfcg/"><img src="img/instagram.png" alt="Logo Instagram"></a>
+                </div>
+            </div>
+            <p>© 2025 Mi Portafolio | Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
