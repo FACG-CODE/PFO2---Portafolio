@@ -8,6 +8,26 @@ body {
     font-family:'Poppins', Cambria;
 }
 
+#contador-temporizador {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: auto;
+    max-width: 1700px;
+    height: auto;
+    max-height: 100px;
+    padding: 5px;
+}
+
+#contador-temporizador div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -188,7 +208,6 @@ main {
     height: auto;
     max-height: 900PX;
     gap: 1rem;
-    
 }
 
 .contenedor-habilidades img {
@@ -198,6 +217,7 @@ main {
     max-height: 100%;
     background-color: rgb(224, 222, 222);
     border-radius: 2%;
+    padding: 5px;
 }
 
 .contenedor-contacto {
@@ -208,6 +228,7 @@ main {
     margin: 25px;
     margin-top: 150px;
     margin-bottom: 150px;
+    position: relative;
 }
 
 .contenedor-contacto h2 {
@@ -239,7 +260,43 @@ main {
     max-width: 75px;
 }
 
-.contenedor-peliculas {
+#contenedor-mensaje-aviso {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -400px;
+    left: 72px;
+    width: 200px;
+    max-width: 200px;
+    height: 225px;
+    max-height: 300px;
+    border-radius: 1%;
+    background-color:magenta;
+    color: rgb(0, 0, 0);
+}
+
+#contenedor-mensaje-aviso h3 {
+    position: relative;
+    top: -10px;
+    text-align: center;
+    max-width: 175px;
+}
+
+#contenedor-mensaje-aviso p {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    max-width: 175px;
+}
+
+#contenedor-mensaje-aviso button {
+    position: relative;
+    top: -20px;
+}
+
+#contenedor-peliculas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,16 +317,16 @@ main {
     gap: 1rem;
 }
 
-.contenedor-peliculas img {
+#contenedor-peliculas img {
     width: 200px;
     height: 300px;
 }
 
-.contenedor-peliculas h3 {
+#contenedor-peliculas h3 {
     text-align: center;
 }
 
-.contenedor-peliculas p {
+#contenedor-peliculas p {
     text-align: justify;
     width: 300px;
 }
@@ -326,6 +383,31 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#peliculas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-btn-peliculas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.contenedor-btn-peliculas img {
+    width: auto;
+    max-width: 40px;
+    height: auto;
+    max-height: 25px;
 }
 
 .contenedor-redes-sociales {

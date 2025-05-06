@@ -9,6 +9,18 @@
     </head>
 
     <body>
+        <section>
+            <div id="contador-temporizador">
+                <div>
+                    <p>Visitas:</p>
+                    <p id="contador-visitas"></p>
+                </div>
+                <div>
+                    <p>Temporizador:</p>
+                    <p id="temporizador-entrega"></p>
+                </div>
+            </div>
+        </section>
         <!--El bloque HEADER nos permite colocar un titulo principal con un H1. Como mejora propondria insertar 
         el H1 dentro de algun elemeno a fin de  mejorar visualmente a futuro.-->
         <header>
@@ -32,7 +44,7 @@
                 <div class="contenedor-sobre-mi">
                     <h2>Sobre Mí</h2>
                     <div class="sobre-mi-contenido">
-                        <img src="img/avatar.png" alt="Imagen con avatar personal">
+                        <img src="img/generales/avatar.png" alt="Imagen con avatar personal">
                         <p>
                             Soy un joven de 26 años, vivo en CABA y actualmente estoy estudiando la Tecnicatura Superior en 
                             Desarrollo de Software en el Instituto de Formación Técnica Superior Nro. 29. Soy un apasionado 
@@ -51,7 +63,7 @@
                         <div class="tarjeta-proyecto1">
                             <h3>Sistema de Gestion de Consultorios</h3>
                             <div>
-                                <img src="img/seprice.png" alt="Logo Sistema Informatico de la Clinica SePrice">
+                                <img src="img/proyectos/seprice.png" alt="Logo Sistema Informatico de la Clinica SePrice">
                                 <p>
                                     Se trata de un sistema informático para escritorio, con base de datos local, el mismo cuenta 
                                     con distintas funcionalidades como el registro de empleados administrativos, personal médico y 
@@ -63,7 +75,7 @@
                         <div class="tarjeta-proyecto2">
                             <h3>Sistema de Gestion de Consorcios</h3>
                             <div>
-                                <img src="img/consorcio.png" alt="Logo Sistema Informatico para la Gestion de Consorcios">
+                                <img src="img/proyectos/consorcio.png" alt="Logo Sistema Informatico para la Gestion de Consorcios">
                                 <p>
                                     Sistema informático destinado inicialmente para escritorio, se trata de un software con funcionalidades
                                     que automatizan las tareas de un Administrador de Consorcios. El mismo cumple con la actual legislación 
@@ -81,18 +93,19 @@
                 <div class="contenedor-habilidades">
                     <h2>Habilidades</h2>
                     <div class="habilidades-contenido">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Logo del lenguaje de programacion CSharp">
-                        <img src="https://1000marcas.net/wp-content/uploads/2020/11/Java-logo.png" alt="Logo del lenguaje de programacion Java">
-                        <img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" alt="Logo del lenguaje de programacion Klotin">
-                        <img src="https://ih1.redbubble.net/image.5536116430.2042/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Logo sistema gestor de base de datos MySql">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="Logo sistema gestor de base de datos SQLite">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Extensible_Markup_Language_%28XML%29_logo.svg/123px-Extensible_Markup_Language_%28XML%29_logo.svg.png" alt="Logo lenguaje de programacion XML">
-                        <img src="https://user-images.githubusercontent.com/87325345/199505243-848a53d1-b9dc-40e0-9dd9-a369b0d4ad59.jpg" alt="Logos de Git + GitHub">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejkwEg71-W6nYdN0BZYWrfqMN25GeQ5QIrQ&s" alt="Logo Visual Studio">
-                        <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="Logo Visual Studio Code">
-                        <img src="https://www.liblogo.com/img-logo/max/ne6903n085-netbeans-logo-netbeans-logo-png-transparent-amp-svg-vector-freebie-supply.png" alt="Logo NetBeans">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/1200px-Android_Studio_icon_%282023%29.svg.png" alt="Logo Android Studio">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx28mg8aQ39CEGURVztotd5VC0bO7Ik-ZpBw&s" alt="Logo plataforma Figma">
+                        <img src="img/tecnologias/csharp.svg" alt="Logo del lenguaje de programacion CSharp">
+                        <img src="img/tecnologias/java.svg" alt="Logo del lenguaje de programacion Java">
+                        <img src="img/tecnologias/kotlin.svg" alt="Logo del lenguaje de programacion Klotin">
+                        <img src="img/tecnologias/mysql.svg" alt="Logo sistema gestor de base de datos MySql">
+                        <img src="img/tecnologias/sqlite.svg" alt="Logo sistema gestor de base de datos SQLite">
+                        <img src="img/tecnologias/xml.svg" alt="Logo lenguaje de programacion XML">
+                        <img src="img/tecnologias/git.svg" alt="Logos de Git">
+                        <img src="img/tecnologias/github.svg" alt="Logo de GitHub">
+                        <img src="img/tecnologias/visualstudio.svg" alt="Logo Visual Studio">
+                        <img src="img/tecnologias/vscode.svg" alt="Logo Visual Studio Code">
+                        <img src="img/tecnologias/netbeans.svg" alt="Logo NetBeans">
+                        <img src="img/tecnologias/androidstudio.svg" alt="Logo Android Studio">
+                        <img src="img/tecnologias/figma.svg" alt="Logo plataforma Figma">
                     </div>
                 </div>
             </section>
@@ -102,28 +115,33 @@
             <section id="contacto">
                 <div class="contenedor-contacto">
                     <h2>Formulario de Contacto</h2>
-                    <form>
+                    <form id="form-contacto" onsubmit="return mostrarMensaje()">
                         <div>
-                            <label for="nombre"><strong>Nombre: </strong></label>
-                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="form-nombre"><strong>Nombre: </strong></label>
+                            <input type="text" id="form-nombre" name="nombre">
                         </div>
                         <div>
-                            <label for="apellido"><strong>Apellido: </strong></label>
-                            <input type="text" id="apellido" name="apellido" required>
+                            <label for="form-apellido"><strong>Apellido: </strong></label>
+                            <input type="text" id="form-apellido" name="apellido">
                         </div>
                         <div>
-                            <label for="email"><strong>Email: </strong></label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="form-email"><strong>Email: </strong></label>
+                            <input type="text" id="form-email" name="email">
                         </div>
-                        <div class="contacto-button">
+                        <div class="submit">
                             <button type="submit"><strong>SUBMIT</strong></button>
                         </div>
                     </form>
                 </div>
+                <div id="contenedor-mensaje-aviso">
+                    <h3><strong>Aviso del Sistema</strong></h3>
+                    <p id="mensaje-aviso"></p>
+                    <button id="btn-aviso"><strong>Aceptar</strong></button>
+                </div>
             </section>
 
             <section id="peliculas">
-                <div class="contenedor-peliculas">
+                <div id="contenedor-peliculas">
                     <h2>Peliculas Favoritas</h2>
                     <div class="peliculas-contenido">
                         <div class="pelicula1">
@@ -152,6 +170,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="contenedor-btn-peliculas">
+                    <button id="btn-peliculas"><img src="img/generales/eye.png" alt="Ocultar/Mostrar"></button>
+                </div>
             </section>
         </main>
 
@@ -159,11 +180,12 @@
             <div class="contenedor-redes-sociales">
                 <h2>Mis Redes</h2>
                 <div class="redes-sociales">
-                    <a id="logo-red-1" href="https://www.linkedin.com/in/francisco-agustin-cruz-guantay-bb49b42b8/"><img src="img/linkedin.png" alt="Logo Linkedin"></a>
-                    <a id="logo-red-2" href="https://www.instagram.com/agustinfcg/"><img src="img/instagram.png" alt="Logo Instagram"></a>
+                    <a id="logo-red-1" href="https://www.linkedin.com/in/francisco-agustin-cruz-guantay-bb49b42b8/"><img src="img/redes/linkedin.png" alt="Logo Linkedin"></a>
+                    <a id="logo-red-2" href="https://www.instagram.com/agustinfcg/"><img src="img/redes/instagram.png" alt="Logo Instagram"></a>
                 </div>
             </div>
             <p>© 2025 Mi Portafolio | Todos los derechos reservados</p>
         </footer>
     </body>
+    <script src="js/script.js"></script>
 </html>
